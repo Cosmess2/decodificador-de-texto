@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="C:\decodificador\assets\logoAlura.png" alt="Logo da Alura">
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="encriptador">
+            <textarea class="encriptador__conteudo__texto" placeholder="Digite seu texto ..." name="textoEntrada" id="textoEntrada" cols="41" rows="4"></textarea>
+            <div class="encriptador__conteudo__informacao">
+            
+                <h6 id="vermelho">Apenas letras minúsculas e sem acento.</h6>
+            </div>
+
+            <div class="encriptador__conteudo__botoes">
+                <button class="encriptador__conteudo__botoes__criptrografar" onclick="criptografarTexto()">Criptografar</button>
+                <button class="encriptador__conteudo__botoes__descriptrografar" onclick="descriptografarTexto()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="encriptador">
+            <textarea class="encriptador__conteudo__mensagem"  placeholder="Digite um texto que você deseja criptografar ou descriptografar." id="mensagemSaida" name="mensagemSaida"  cols="20" rows="10"></textarea>
+
+            <div  class="encriptador__conteudo__botoes">
+                <button class="encriptador__conteudo__botoes__copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">Cosme Carlos  #Sou ONE</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
